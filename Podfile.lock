@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (4.9.1)
+  - DeviceKit (2.3.0)
+  - ESTabBarController-swift (2.7)
+  - Realm (3.20.0):
+    - Realm/Headers (= 3.20.0)
+  - Realm/Headers (3.20.0)
+  - RealmSwift (3.20.0):
+    - Realm (= 3.20.0)
+  - SDWebImage (5.4.0):
+    - SDWebImage/Core (= 5.4.0)
+  - SDWebImage/Core (5.4.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - DeviceKit (~> 2.3)
+  - ESTabBarController-swift
+  - RealmSwift (~> 3.20.0)
+  - SDWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - DeviceKit
+    - ESTabBarController-swift
+    - Realm
+    - RealmSwift
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  DeviceKit: da103891aa928d89f64ea8dd8aca738c5f3d8ac0
+  ESTabBarController-swift: 4fb52ad03d94d0717ef97bc9eb09a5abfdded0a2
+  Realm: 8b2ca5bc6479a91f379b6b42b5922e396cd5ba5a
+  RealmSwift: 1949ef26a279e1845bd51d591b9103adfcd121df
+  SDWebImage: 5bf6aec6481ae2a062bdc59f9d6c1d1e552090e0
+
+PODFILE CHECKSUM: 03852fcbcc1fadca1cac34f0f9d256891c4027f7
+
+COCOAPODS: 1.5.2

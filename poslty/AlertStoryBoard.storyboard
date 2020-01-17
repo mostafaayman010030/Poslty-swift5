@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lert View Controller-->
+        <scene sceneID="mHV-xV-EaQ">
+            <objects>
+                <viewController restorationIdentifier="alertSId" storyboardIdentifier="alertSId" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="YWi-sy-KHe" customClass="ALertViewController" customModule="poslty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9ec-9c-MZL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r8c-vl-W96">
+                                <rect key="frame" x="77.5" y="580" width="259" height="230"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WAf-yM-Bx6">
+                                        <rect key="frame" x="0.0" y="0.0" width="259" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تواصل معنا" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Osy-4f-H9j">
+                                                <rect key="frame" x="94" y="12.5" width="71" height="25"/>
+                                                <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="25"/>
+                                                <color key="textColor" red="0.0" green="0.31146491500000001" blue="0.36250239610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiO-Z0-LIT">
+                                                <rect key="frame" x="229" y="7" width="25" height="15.5"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.26907231300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="req-UE-nn9"/>
+                                                    <constraint firstAttribute="width" constant="25" id="slG-fj-rrh"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" backgroundImage="xmark" catalog="system"/>
+                                                <connections>
+                                                    <action selector="cancel:" destination="YWi-sy-KHe" eventType="touchUpInside" id="T69-2y-SLX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="32M-SI-TUX"/>
+                                            <constraint firstItem="Osy-4f-H9j" firstAttribute="centerY" secondItem="WAf-yM-Bx6" secondAttribute="centerY" id="8xF-W5-QKE"/>
+                                            <constraint firstAttribute="trailing" secondItem="WiO-Z0-LIT" secondAttribute="trailing" constant="5" id="C3P-1V-9zz"/>
+                                            <constraint firstItem="Osy-4f-H9j" firstAttribute="centerX" secondItem="WAf-yM-Bx6" secondAttribute="centerX" id="PVk-QP-A9E"/>
+                                            <constraint firstItem="WiO-Z0-LIT" firstAttribute="top" secondItem="WAf-yM-Bx6" secondAttribute="top" constant="5" id="U2F-3D-LmG"/>
+                                            <constraint firstItem="Osy-4f-H9j" firstAttribute="centerX" secondItem="WAf-yM-Bx6" secondAttribute="centerX" id="b1l-hZ-JNB"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="eTO-xU-jmG"/>
+                                            <constraint firstItem="Osy-4f-H9j" firstAttribute="leading" secondItem="WAf-yM-Bx6" secondAttribute="leading" constant="87" id="sE6-mu-k1N"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="PVk-QP-A9E"/>
+                                                <exclude reference="sE6-mu-k1N"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="OIb-Fm-9WJ">
+                                        <rect key="frame" x="39.5" y="86.5" width="180" height="100"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ym-ct-t6m">
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="30"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whatsapp_PNG15" translatesAutoresizingMaskIntoConstraints="NO" id="Ztl-bt-4IA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="TDM-jd-Do3"/>
+                                                            <constraint firstAttribute="width" constant="30" id="sT6-Ln-tsl"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwd-NM-osH">
+                                                        <rect key="frame" x="30" y="0.0" width="150" height="30"/>
+                                                        <color key="backgroundColor" red="0.47159481048583984" green="0.67137604951858521" blue="0.34241190552711487" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="CaC-7y-mF8"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="22"/>
+                                                        <state key="normal" title="واتس أب">
+                                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="WhatAppClick:" destination="YWi-sy-KHe" eventType="touchUpInside" id="VK4-bp-p3o"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ec8-7I-xlK">
+                                                <rect key="frame" x="0.0" y="35" width="180" height="30"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="messenger" translatesAutoresizingMaskIntoConstraints="NO" id="QAD-ga-VcI">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="1b2-Su-c4i"/>
+                                                            <constraint firstAttribute="width" constant="30" id="9N9-mt-rn0"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8up-jv-rhK">
+                                                        <rect key="frame" x="30" y="0.0" width="150" height="30"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.60726374217991785" blue="0.9361119923857868" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="Sdb-Lw-Nsq"/>
+                                                            <constraint firstAttribute="width" constant="150" id="dl9-Zv-T7v"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="22"/>
+                                                        <state key="normal" title="ماسنجر">
+                                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="messengerClick:" destination="YWi-sy-KHe" eventType="touchUpInside" id="ovk-Y5-0Cg"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4eZ-a2-Pts">
+                                                <rect key="frame" x="0.0" y="70" width="180" height="30"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gmai" translatesAutoresizingMaskIntoConstraints="NO" id="iky-pW-0JQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="30" id="23w-LP-zsJ"/>
+                                                            <constraint firstAttribute="width" constant="30" id="uPs-Cp-LDG"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewk-zL-oB0">
+                                                        <rect key="frame" x="30" y="0.0" width="150" height="30"/>
+                                                        <color key="backgroundColor" red="0.82187801599502563" green="0.33703070878982544" blue="0.29002851247787476" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="150" id="brm-fm-v3h"/>
+                                                            <constraint firstAttribute="height" constant="30" id="oh4-eW-FJO"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Farah" family="Farah" pointSize="20"/>
+                                                        <state key="normal" title="البريد الالكترونى">
+                                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="gmailClick:" destination="YWi-sy-KHe" eventType="touchUpInside" id="OrA-Dy-JJe"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.84174634879999999" green="0.98265463080000004" blue="0.97145964829999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="WAf-yM-Bx6" firstAttribute="top" secondItem="r8c-vl-W96" secondAttribute="top" id="4so-Vb-ncK"/>
+                                    <constraint firstItem="WAf-yM-Bx6" firstAttribute="leading" secondItem="r8c-vl-W96" secondAttribute="leading" id="BWO-1g-rjV"/>
+                                    <constraint firstAttribute="trailing" secondItem="WAf-yM-Bx6" secondAttribute="trailing" id="FvS-mG-Ljh"/>
+                                    <constraint firstAttribute="width" constant="259" id="MOG-4b-OZa"/>
+                                    <constraint firstItem="OIb-Fm-9WJ" firstAttribute="centerY" secondItem="r8c-vl-W96" secondAttribute="centerY" constant="21.5" id="OLO-wj-F3t"/>
+                                    <constraint firstItem="WAf-yM-Bx6" firstAttribute="centerX" secondItem="r8c-vl-W96" secondAttribute="centerX" id="R07-we-ZWe"/>
+                                    <constraint firstItem="OIb-Fm-9WJ" firstAttribute="centerX" secondItem="r8c-vl-W96" secondAttribute="centerX" id="tBJ-ka-6Oe"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75573048857868019" green="0.75573048857868019" blue="0.75573048857868019" alpha="0.4685627140410959" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="r8c-vl-W96" firstAttribute="centerX" secondItem="9ec-9c-MZL" secondAttribute="centerX" id="DyU-PI-z4R"/>
+                            <constraint firstItem="r8c-vl-W96" firstAttribute="top" secondItem="3CA-B0-dEw" secondAttribute="top" constant="536" id="jY4-Qy-jna"/>
+                            <constraint firstItem="r8c-vl-W96" firstAttribute="centerY" secondItem="9ec-9c-MZL" secondAttribute="centerY" constant="247" id="xvf-fC-ovA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3CA-B0-dEw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lDn-2B-mvc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-123.18840579710145" y="33.482142857142854"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gmai" width="426.5" height="323"/>
+        <image name="messenger" width="400" height="400"/>
+        <image name="whatsapp_PNG15" width="170.5" height="170.5"/>
+        <image name="xmark" catalog="system" width="64" height="56"/>
+    </resources>
+</document>
